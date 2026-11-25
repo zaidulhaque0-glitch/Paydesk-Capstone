@@ -1,0 +1,27 @@
+Fresh seed | embedded SQLite
+employee         12
+salary           13
+attendance       768
+leave_request    25
+pay_period       2
+payroll          24
+
+September attendance | first employee
+{'code': 'IT-001', 'full_name': 'Ananya Rao', 'department': 'Engineering', 'scheduled': 22, 'present': 20, 'absent': 1, 'leave_days': 1, 'unmarked': 0, 'late': 4}
+
+August salary slip | first employee
+{'code': 'IT-001', 'full_name': 'Ananya Rao', 'month_start': '2026-08-01', 'monthly_amount': 72000, 'working_days': 21, 'paid_days': 20, 'gross': 68571, 'tax': 2857, 'net': 65714}
+
+Before adding the attendance index
+  SCAN a
+  SEARCH e USING INDEX sqlite_autoindex_employee_1 (code=?)
+  USE TEMP B-TREE FOR ORDER BY
+  42 late marks | 4955 SQLite VM instructions
+
+After adding the attendance index
+  SEARCH a USING INDEX idx_attendance_late_date (work_date>? AND work_date<?)
+  SEARCH e USING INDEX sqlite_autoindex_employee_1 (code=?)
+  USE TEMP B-TREE FOR LAST TERM OF ORDER BY
+  42 late marks | 1206 SQLite VM instructions
+
+Identical report rows; instruction count changed by 75.7%.

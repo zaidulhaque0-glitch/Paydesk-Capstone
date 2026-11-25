@@ -1,0 +1,21 @@
+test_01_all_six_screens_and_three_reports (test_capstone.CapstoneTests.test_01_all_six_screens_and_three_reports) ... ok
+test_02_seed_has_12_employees_and_three_complete_months (test_capstone.CapstoneTests.test_02_seed_has_12_employees_and_three_complete_months) ... ok
+test_03_payroll_math_and_tax_thresholds (test_capstone.CapstoneTests.test_03_payroll_math_and_tax_thresholds) ... ok
+test_04_salary_revision_used_only_from_effective_month (test_capstone.CapstoneTests.test_04_salary_revision_used_only_from_effective_month) ... ok
+test_05_negative_salary_rolls_back_employee_and_login (test_capstone.CapstoneTests.test_05_negative_salary_rolls_back_employee_and_login) ... ok
+test_06_duplicate_attendance_fails_without_overwriting (test_capstone.CapstoneTests.test_06_duplicate_attendance_fails_without_overwriting) ... ok
+test_07_late_cutoff_and_absence (test_capstone.CapstoneTests.test_07_late_cutoff_and_absence) ... ok
+test_08_approved_overlap_inclusive_and_attendance_conflict (test_capstone.CapstoneTests.test_08_approved_overlap_inclusive_and_attendance_conflict) ... ok
+test_09_reversed_time_and_weekend_rejected (test_capstone.CapstoneTests.test_09_reversed_time_and_weekend_rejected) ... ok
+test_10_batch_failure_after_partial_work_rolls_back (test_capstone.CapstoneTests.test_10_batch_failure_after_partial_work_rolls_back) ... ok
+test_11_repeated_and_competing_posts_leave_one_complete_batch (test_capstone.CapstoneTests.test_11_repeated_and_competing_posts_leave_one_complete_batch) ... ok
+test_12_posted_inputs_are_locked (test_capstone.CapstoneTests.test_12_posted_inputs_are_locked) ... ok
+test_13_employee_scope_in_pages_exports_and_direct_urls (test_capstone.CapstoneTests.test_13_employee_scope_in_pages_exports_and_direct_urls) ... ok
+test_14_csrf_logged_out_and_wrong_password (test_capstone.CapstoneTests.test_14_csrf_logged_out_and_wrong_password) ... ok
+test_15_join_midmonth_and_salary_revision (test_capstone.CapstoneTests.test_15_join_midmonth_and_salary_revision) ... ok
+test_16_approved_leave_counts_only_eligible_weekdays (test_capstone.CapstoneTests.test_16_approved_leave_counts_only_eligible_weekdays) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 7.068s
+
+OK

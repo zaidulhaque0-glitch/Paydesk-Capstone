@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block body %}<main class="standalone"><div class="kicker">Paydesk / {{err.code}}</div><h1>{{err.name}}</h1><p>{{err.description}}</p><a class="button" href="{{url_for('home')}}">Return to workspace</a></main>{% endblock %}

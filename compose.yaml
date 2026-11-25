@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: paydesk
+      POSTGRES_USER: paydesk
+      POSTGRES_PASSWORD: classroom_local
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - paydesk_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paydesk -d paydesk"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+volumes:
+  paydesk_data:
+
